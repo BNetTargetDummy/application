@@ -1,0 +1,15 @@
+TargetDummy:
+  app:
+    prefixes: ['!targetdummy', '!td']
+    debug: false
+
+BattleNet:
+  api:
+    token:
+
+Discord:
+  console:
+    server:
+    channel:
+  api:
+    token:
