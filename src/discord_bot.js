@@ -1,6 +1,4 @@
 // Require Packages
-const array = require('lodash/array');
-
 const configTD = require('config').get('TargetDummy');
 const configDiscord = require('config').get('Discord');
 
@@ -58,6 +56,7 @@ bot.on('message', message => {
     // check against all prefixes first, to avoid doing more work
     if(!prefixes.indexOf(getFirstWord(message.content))) return;
 
+    channel.sendMessage('TargetDummy prefix command detected!');
 
 });
 

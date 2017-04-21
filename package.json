@@ -1,21 +1,22 @@
 {
-  "name": "targetdummy",
+  "name": "@targetdummy/application",
   "version": "0.0.1",
   "description": "Unofficial testing framework for Battle.net APIs",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "mocha test"
+    "start": "node --optimize_for_size --max_old_space_size=920 --gc_interval=100 src/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UnofficialBattleNet/TargetDummy.git"
+    "url": "git+https://github.com/bnettargetdummy/application.git"
   },
   "keywords": [
-    "BattleNet",
+    "Blizzard",
     "API",
     "Test",
-    "Framework"
+    "Framework",
+    "Applicaiton",
+    "Discord"
   ],
   "author": "Josh Weiss, Sapu",
   "license": "MIT",
@@ -33,7 +34,8 @@
     "lodash": "^4.17.4",
     "node-opus": "^0.2.4",
     "opusscript": "0.0.1",
-    "uws": "^0.12.0"
+    "require-all": "^2.1.0",
+    "uws": "^0.14.1"
   },
   "devDependencies": {
     "mocha": "^3.2.0"

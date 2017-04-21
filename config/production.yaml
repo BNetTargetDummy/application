@@ -5,11 +5,11 @@ TargetDummy:
 
 BattleNet:
   api:
-    token:
+    token: BATTLENET_API_TOKEN
 
 Discord:
   console:
-    server:
-    channel:
+    server: Blizzard API Dev
+    channel: target-dummy
   api:
-    token:
+    token: DISCORD_API_TOKEN
