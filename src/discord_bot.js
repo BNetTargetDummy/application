@@ -55,9 +55,6 @@ bot.on('message', message => {
 
     // check against all prefixes first, to avoid doing more work
     if(!prefixes.indexOf(getFirstWord(message.content))) return;
-
-    channel.sendMessage('TargetDummy prefix command detected!');
-
 });
 
 bot.on("messageUpdate", (oldMessage, newMessage) => {
@@ -72,7 +69,7 @@ bot.on("disconnected", function () {
 });
 
 // log our bot in
-bot.login(configDiscord.get('api.token'));
+bot.login(process.env.DISCORD_API_TOKEN);
 
 function getFirstWord(str) {
     if (str.indexOf(' ') === -1)

@@ -3,13 +3,7 @@ TargetDummy:
     prefixes: ['!targetdummy', '!td']
     debug: false
 
-BattleNet:
-  api:
-    token: BATTLENET_API_TOKEN
-
 Discord:
   console:
     server: Blizzard API Dev
     channel: target-dummy
-  api:
-    token: DISCORD_API_TOKEN
