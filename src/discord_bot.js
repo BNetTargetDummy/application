@@ -1,6 +1,9 @@
-// Require Packages
+// Require Configs
 const configTD = require('config').get('TargetDummy');
 const configDiscord = require('config').get('Discord');
+
+// Require Modules
+const _ = require('lodash');
 
 let Discord = null;
 
@@ -30,7 +33,7 @@ bot.on('ready', () => {
         // check if output channel exists
         let channel = guild.channels.find("name", configDiscord.get('console.channel'));
 
-        if(channel.isNull) {
+        if(_.isNull(channel)) {
             guild.createChannel(configDiscord.get('console.channel'), 'text')
                 .then(
                     channel => {
