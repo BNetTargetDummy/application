@@ -1,9 +1,8 @@
-TargetDummy:
-  app:
-    prefixes: ['!targetdummy', '!td']
-    debug: false
+app:
+  prefixes: ['!targetdummy', '!td']
+  debug: false
 
-Discord:
+discord:
   console:
     server: Blizzard API Dev
     channel: target-dummy

@@ -2,7 +2,7 @@
  require Discord support. For now it loads this by default. Any app
  instance context will be called directly from the DiscordBot.
  */
-const Discord = require('./discord_bot');
+const DiscordBot = require('./discord_bot');
 const logo = require('figlet');
 
 // Constants
